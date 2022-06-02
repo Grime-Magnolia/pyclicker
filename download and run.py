@@ -1,9 +1,9 @@
 import os
-path = os.environ.get('HOMEPATH')
+path = os.environ.get('%LOCALAPPDATA%')
 imports = ['keyboard','mouse','random','time','wget']
 imports2 = ['keyboard-','mouse-','random-','time-','wget-']
 a = -1
-listy = str(os.listdir(f'{path}/AppData/Local/Programs/Python/Python39/Lib/site-packages/'))
+listy = str(os.listdir(f'{path}/Programs/Python/Python39/Lib/site-packages/'))
 while not 3 == a:
     b = 0
     a = a + 1
