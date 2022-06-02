@@ -1,4 +1,3 @@
-
 import os
 path = os.environ.get('HOMEPATH')
 imports = ['keyboard','mouse','random','time','wget']
@@ -27,4 +26,3 @@ f.close()
 os.remove("click.txt")
 print('')
 exec(file)
-
