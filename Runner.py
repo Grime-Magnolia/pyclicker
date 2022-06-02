@@ -1,5 +1,5 @@
 import os
-path = os.environ.get('%LOCALAPPDATA%')
+path = os.environ.get('LOCALAPPDATA')
 imports = ['keyboard','mouse','random','time','wget']
 imports2 = ['keyboard-','mouse-','random-','time-','wget-']
 a = -1
@@ -8,9 +8,11 @@ while not 3 == a:
     b = 0
     a = a + 1
     if imports[a] in listy:
+        pass
     else:
         b = 1
     if imports2[a] in listy:
+        pass
     else:
         b = 1
     if b == 1:
