@@ -15,9 +15,8 @@ try:
     listy = str(os.listdir(f'{path}/Programs/Python/Python310/Lib/site-packages'))
 except:
     listy = str(os.listdir(f'{path}/Programs/Python/Python39/Lib/site-packages'))
-while not 3 == a:
+for a in imports:
     b = 0
-    a = a + 1
     if not imports[a] in listy:
         b = 1
     if not imports2[a] in listy:
