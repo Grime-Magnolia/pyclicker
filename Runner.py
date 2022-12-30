@@ -1,6 +1,7 @@
 import os
 import random
 import string
+import wget
 '--------------------------'
 letters = string.ascii_lowercase
 ''.join(random.choice(letters) for i in range(10))
@@ -24,7 +25,6 @@ for a in imports:
     if b == 1:
         b = 0
         os.system(f"pip install {imports[a]}")
-import wget
 wget.download(remote_url, local_file)
 f = open(local_file, "r")
 file = f.read()
